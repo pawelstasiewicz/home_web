@@ -1,3 +1,59 @@
+@media only screen and (min-width: 568px) {
+	header {
+		.header_text{
+            top: 50%;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+
+            button{
+                padding: 20px 30px;
+                font-size: 1.2rem;
+            }
+        }
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+    
+        nav{
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 12;
+            background-color: var(--white);
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+
+		.header_text{
+            top: 60%;
+            z-index: 14;
+        }
+
+        nav{
+            .nav_btn{
+                button{
+                    cursor: pointer;
+                }
+                
+            }
+        }
+	}
+
+}
+
+
 @media only screen and (min-width: 1024px) {
 	header {
 		nav {
@@ -33,5 +89,9 @@
                 }
             }
 		}
+
+        .header_text{
+            top: 60%;
+        }
 	}
 }

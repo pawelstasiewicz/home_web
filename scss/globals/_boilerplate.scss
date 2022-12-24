@@ -11,6 +11,7 @@ body {
 header {
 	width: 100vw;
 	height: 100vh;
+	position: relative;
 
 	nav {
 		display: flex;
@@ -42,6 +43,38 @@ header {
 
 		.nav_btn {
 			display: none;
+		}
+	}
+
+	img{
+		width: 100vw;
+	}
+
+	.header_text{
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 70%;
+		text-align: center;
+		color: var(--white);
+
+		h1{
+			font-size: 1.5rem;
+			padding: 5px;
+		}
+
+		p{
+			font-size: .8rem;
+		}
+
+		button{
+			margin: 20px;
+			background-color: var(--white);
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
 		}
 	}
 }
