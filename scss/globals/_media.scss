@@ -1,7 +1,6 @@
 @media only screen and (min-width: 568px) {
 	header {
 		.header_text{
-            top: 50%;
 
             h1{
                 font-size: 3rem;
@@ -17,11 +16,29 @@
             }
         }
 	}
+
+    main{
+        .search_area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -60px auto;
+
+            .search_choose{
+                align-items: center;
+                margin: 10px;
+                .location, .type, .price{
+                    width: 20vw;
+                    margin: 3px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
     header {
-    
+
         nav{
             position: sticky;
             top: 0;
@@ -37,7 +54,7 @@
         }
 
 		.header_text{
-            top: 60%;
+            top: 30vh;
             z-index: 14;
         }
 
@@ -51,6 +68,32 @@
         }
 	}
 
+    main{
+        .search_area{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            z-index: 25;
+            transform: translate(-50%,-50%);
+
+            .search_choose{
+                margin: 10px;
+                .location, .type, .price{
+                    width: 20vw;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 850px){
+    main{
+        .search_area{
+            top:95%;
+        }
+    }
 }
 
 
@@ -91,7 +134,36 @@
 		}
 
         .header_text{
-            top: 60%;
+            top: 70vh;
         }
 	}
+
+    main{
+        .search_area{
+            height: 20vh;
+            width: 80vw;
+            top: 113%;
+
+            .search_choose{
+                .location, .type, .price{
+                    font-size: 1.3rem;
+                    select{
+                        width: 17vw;
+                    }
+                }
+            }
+
+            .btn{
+                margin: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    main{
+        .search_area{
+            top: 110%;
+        }
+    }
 }
